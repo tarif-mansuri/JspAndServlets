@@ -37,4 +37,20 @@ jsp declaration tag <%! >
 the code written inside scriptlet tag goes outside service method in servlet thats why we can declare variables 
 or new methods inside this tag and code inside <% %> and <%= %> can access the code inside <%! %>
 
+jsp implicit Objects=> are created during translation phase (jsp to servlet) and they can be accessed from the
+scriptlet tags that goes inside service method
+
+there are 9 implicit objects
+out, request, response, config, application, session, pageContext, page, exception
+
+config: In JSP, config is an implicit object of type ServletConfig. This object can be used to get initialization parameter for a particular JSP page. The config object is created by the web container for each jsp page.
+
+
+pageContext: The pageContext object can be used to set,get or remove attribute from one of the following scopes:
+page
+request
+session
+application
+In JSP, page scope is the default scope
+
 

@@ -1,3 +1,4 @@
+<%@page import="org.omg.CORBA.portable.ApplicationException"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -15,6 +16,7 @@ public int add(int a,int b){
 public String addString(String a, String b){
 	return a+b;
 }
+
 %>
 
 <%
@@ -32,12 +34,12 @@ k = add(67576,897);
 <br>
 Value of k IS: <%=i+j %>
 <br>
-<%= addString(a, b) %>
 <%
 for(int var=0;var<5;var++){%>
 	<%=var %>
 	<br>
 <% }
 %>
+<%=  %>
 </body>
 </html>

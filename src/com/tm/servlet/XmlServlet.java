@@ -8,6 +8,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 public class XmlServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -20,5 +21,6 @@ public class XmlServlet extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		String userName = request.getParameter("userName");
 		out.println("Hello from the post method! "+userName);
+		HttpSession session = request.getSession();
 	}
 }
